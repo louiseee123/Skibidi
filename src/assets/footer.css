@@ -1,0 +1,35 @@
+.footer{
+    position:flex;
+    background-color: #0C9359;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-family: Inter;
+}
+
+.navbar{
+    color: #0C9359;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.privacy{
+    color: white;
+}
+
+.tos{
+    color: white;
+}
+
+.contact{
+    color: white;
+}
+
+.company{
+    color: white;
+}
+
