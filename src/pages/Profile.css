@@ -1,0 +1,356 @@
+/* Base Styles */
+.profile-container {
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+    background: #f5f5f5;
+    color: #333;
+    min-height: 100vh;
+  }
+  
+  .profile-header {
+    background: #2C3E50;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .profile-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+  }
+  
+  /* Layout */
+  .profile-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+  }
+  
+  @media (max-width: 900px) {
+    .profile-content {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Sidebar */
+  .profile-sidebar {
+    position: relative;
+  }
+  
+  .profile-card {
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 20px;
+  }
+  
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    display: block;
+    border: 3px solid #3498DB;
+  }
+  
+  .profile-username {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #2C3E50;
+  }
+  
+  .profile-email {
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+  }
+  
+  .profile-joindate {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+  }
+  
+  /* Stats */
+  .profile-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 25px 0;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .stat-item {
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .stat-icon {
+    font-size: 1.5rem;
+    color: #3498DB;
+    margin-bottom: 5px;
+  }
+  
+  .stat-value {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2C3E50;
+    margin-bottom: 3px;
+  }
+  
+  .stat-label {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+  }
+  
+  /* Reading Goal */
+  .reading-goal {
+    margin: 25px 0;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .reading-goal h3 {
+    font-size: 1.1rem;
+    color: #2C3E50;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .goal-progress {
+    height: 8px;
+    background-color: #ecf0f1;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #3498DB;
+    border-radius: 4px;
+    transition: width 0.5s ease;
+  }
+  
+  .goal-text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+  }
+  
+  /* Favorite Genres */
+  .favorite-genres {
+    margin-top: 25px;
+  }
+  
+  .favorite-genres h3 {
+    font-size: 1.1rem;
+    color: #2C3E50;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .genre-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .genre-tag {
+    background-color: #e0f7fa;
+    color: #00838f;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  /* Main Content */
+  .profile-main {
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Tabs */
+  .profile-tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 25px;
+  }
+  
+  .tab-button {
+    padding: 12px 25px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-weight: 600;
+    color: #7f8c8d;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+  }
+  
+  .tab-button:hover {
+    color: #3498DB;
+  }
+  
+  .tab-button.active {
+    border-bottom: 3px solid #3498DB;
+    color: #3498DB;
+  }
+  
+  .tab-icon {
+    font-size: 1.1rem;
+  }
+  
+  /* Books Section */
+  .section-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #2C3E50;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .section-icon {
+    color: #3498DB;
+  }
+  
+  .books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    .books-grid {
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+  }
+  
+  /* Book Card */
+  .book-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 15px;
+    transition: all 0.3s ease;
+    background: white;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-cover {
+    height: 180px;
+    background: #eee;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .reading-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background-color: white;
+    transition: width 0.5s ease;
+  }
+  
+  .book-info {
+    padding: 5px;
+  }
+  
+  .book-title {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #2C3E50;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .book-author {
+    color: #7f8c8d;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+  }
+  
+  .book-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #7f8c8d;
+  }
+  
+  .progress-text {
+    color: #3498DB;
+    font-weight: 500;
+  }
+  
+  .last-read {
+    font-size: 0.75rem;
+  }
+  
+  .added-date {
+    font-size: 0.75rem;
+  }
+  
+  .wishlist-remove {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    font-size: 0.75rem;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 3px 6px;
+    border-radius: 3px;
+  }
+  
+  .wishlist-remove:hover {
+    background-color: #fdedec;
+  }
